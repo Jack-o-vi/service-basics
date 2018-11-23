@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ServicesTutorial</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="bind">Bind</string>
+    <string name="unbind">Unbind</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+</resources>

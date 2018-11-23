@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeienko.servicestutorial">
+
+    <application
+        android:name=".core.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".ui.activity.local_service.LocalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.service_simple_example.MainActivity" />
+        <activity android:name=".ui.activity.pending_intent.PendingIntentActivity" />
+        <activity android:name=".ui.activity.bind_service.BindActivity" />
+        <!--<activity android:name=".ui.activity.local_service.LocalActivity" />-->
+
+        <service android:name=".ui.activity.service_simple_example.MyService" />
+        <service android:name=".ui.activity.service_simple_example.MyService1" />
+        <service android:name=".ui.activity.pending_intent.PendingIntentService" />
+        <service android:name=".ui.activity.broadcast_receiver.BroadcastService" />
+        <service android:name=".ui.activity.bind_service.BindService" />
+        <service android:name=".ui.activity.local_service.LocalService" />
+    </application>
+
+</manifest>
